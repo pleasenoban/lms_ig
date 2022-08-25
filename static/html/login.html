@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script defer src="/js/login.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <img src="/imgs/logo.png" id="logo" onclick="location.href = '/main.html'">
+    </div>
+    <div id="loginform">
+        <h1 id="text">sign in</h1>
+        <input type="text" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <div id="showpass">
+            <input type="checkbox" id="show">
+            <label for="show">show password</label>
+        </div>
+        <div id="signs">
+            <a href="/signup.html" id="signuppage">sign up</a>
+            <button id="loginbut" onclick="submit();">sign in</button>
+        </div>
+    </div>
+</body>
+</html>

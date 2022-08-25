@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+}
+
+body {
+    color: rgb(232, 230, 227);
+    background-color: #181a1b;
+    opacity: 87%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #2196f3;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 10px;
+    height: 50px;
+    width: auto;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#signs {
+    width: 100%;
+    display: block;
+}
+
+#loginbut {
+    width: 125px;
+    height: 35px;
+    color: whitesmoke;
+    background-color: rgb(10, 106, 182);
+    border: none;
+    outline: 0;
+    border-radius: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-47%);
+}
+
+#loginbut:hover {
+    cursor: pointer;
+    opacity: 87%;
+}
+
+#username, #password {
+    height: 2rem;
+    width: 15rem;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+#showpass {
+    margin-bottom: 10px;
+}
+
+#text {
+    margin-bottom: 10px;
+}
+
+#signuppage {
+    color: whitesmoke;
+}

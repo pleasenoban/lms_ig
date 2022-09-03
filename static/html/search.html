@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qna</title>
-    <link rel="stylesheet" href="/css/pell.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <script defer src="/js/main.js"></script>
-    <script defer src="/js/pell.js"></script>
+    <title>question view</title>
+    <link rel="stylesheet" href="/css/search.css">
+    <script defer src="/js/search.js"></script>
 </head>
 <body>
-    <dialog id="createdia">
-        <form method="dialog">
-            <input type="text" id="title" placeholder="title">
-            <div id="editor"></div>
-            <div id="closebtns">
-                <button id="createbtn" type="button" value="create">create</button>
-                <button id="cancel" type="button" value="cancel">cancel</button>
-            </div>
-        </form>
-    </dialog>
     <div id="navbar">
         <img src="/imgs/logo.png" id="logo" onclick="location.href = '/main.html'">
         <div id="searchcont">
@@ -35,8 +23,7 @@
             <button id="signup" onclick="location.href = '/signup.html'">signup</button> -->
         </div>
     </div>
-    <div id="questions">
-        <button id="create" onclick="create();">create question</button>
+    <div id="answers">
         <!-- <div class="question">
             <div class="qa">
                 <img class="qat" src="/imgs/avatar.png"></img>

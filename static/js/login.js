@@ -18,6 +18,5 @@ async function submit() {
         if (rettext === "invalid username or password") return alert("invalid username or password");
         return alert("failed to fetch");
     }
-    alert("successful")
-    // location.href = "/login.html";
+    location.href = "/main.html";
 }

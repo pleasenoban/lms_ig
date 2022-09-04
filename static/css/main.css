@@ -156,7 +156,6 @@ body {
 .qaname,
 .qtt,
 .qtc {
-    text-overflow: ellipsis;
     overflow: hidden;
     word-wrap: break-word;
 }

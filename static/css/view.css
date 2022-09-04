@@ -168,6 +168,15 @@ body {
     padding: 10px;
 }
 
+.qaname,
+.qtt,
+.qtc,
+.ctc,
+.caname {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
 #createdia {
     position: fixed;
     left: 50%;

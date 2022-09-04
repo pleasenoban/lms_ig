@@ -48,6 +48,10 @@ function search() {
     location.reload();
 }
 
+searche.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter") search();
+});
+
 async function runsearch() {
     let query = localStorage.getItem("searchquery");
     searche.value = query;
@@ -63,7 +67,7 @@ async function runsearch() {
     let json = await res.json();
 
     for (let [key, value] of Object.entries(json)) {
-        answerse.innerHTML += `<div class="question">
+        answerse.innerHTML += `<div class="question" onclick='view("${key}");'>
                                     <div class="qa">
                                         <img class="qat" src="/imgs/avatar.png"></img>
                                         <h4 class="qaname">${sanitizeHTML(value.creator)}</h3>
@@ -74,6 +78,11 @@ async function runsearch() {
                                     </div>
                                 </div>`;
     }
+}
+
+function view(id) {
+    localStorage.setItem("viewid", id);
+    location.href = "/view.html";
 }
 
 setuser();

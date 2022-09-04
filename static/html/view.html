@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>question view</title>
     <link rel="stylesheet" href="/css/view.css">
+    <link rel="stylesheet" href="/css/pell.css">
     <script defer src="/js/view.js"></script>
+    <script defer src="/js/pell.js"></script>
 </head>
 <body>
+    <dialog id="createdia">
+        <form method="dialog">
+            <div id="editor"></div>
+            <div id="closebtns">
+                <button id="createbtn" type="button" value="create">create</button>
+                <button id="cancel" type="button" value="cancel">cancel</button>
+            </div>
+        </form>
+    </dialog>
     <div id="navbar">
         <img src="/imgs/logo.png" id="logo" onclick="location.href = '/main.html'">
         <div id="searchcont">
             <input type="text" id="search" placeholder="search">
-            <button id="searchbtn">&#x1F50D;</button>
+            <button id="searchbtn" onclick="search();">&#x1F50D;</button>
         </div>
-        <div id="userdata">
-            <!-- <p id="welcomemsg">welcome,&nbsp;</p>
-            <p id="username">uwu</p>
-            <button id="logout" onclick="logout();">logout</button> -->
-            <!-- <button id="login" onclick="location.href = '/login.html'">login</button>
-            <button id="signup" onclick="location.href = '/signup.html'">signup</button> -->
+        <div id="userdata"></div>
+    </div>
+    <div id="qnc">
+        <div id="question"></div>
+        <button id="create" onclick="create();">create comment</button>
+        <div id="comments">
+            <!-- <div class="comment">
+                <div class="ca">
+                    <img class="cat" src="/imgs/avatar.png"></img>
+                    <h4 class="caname">name</h3>
+                </div>
+                <div class="ct">
+                    <p class="ctc">contents</p>
+                </div>
+            </div> -->
         </div>
     </div>
 </body>

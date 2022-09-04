@@ -153,6 +153,19 @@ body {
     height: 30px;
 }
 
+.qaname,
+.qtt,
+.qtc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.qtc {
+    padding: 10px;
+    height: 100px;
+}
+
 #createdia {
     position: fixed;
     left: 50%;
@@ -174,17 +187,4 @@ body {
     width: 200px;
     padding: 5px;
     font-size: medium;
-}
-
-.qaname,
-.qtt,
-.qtc {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-wrap: break-word;
-}
-
-.qtc {
-    padding: 10px;
-    height: 100px;
 }

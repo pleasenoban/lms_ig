@@ -48,7 +48,7 @@ async function logout() {
     location.href = "/login.html";
 }
 
-async function create() {
+function create() {
     pell.init({
         element: editor,
         actions: ["bold",
@@ -72,7 +72,6 @@ async function create() {
 
 createbtn.addEventListener("click", async () => {
     createdia.close();
-    console.log(title.value, editor.content.innerHTML);
     let res = await fetch("/createpost", {
         method: "POST",
         credentials: "include",
@@ -107,7 +106,7 @@ async function getposts() {
         credentials: "include"
     })).json();
     for (let [key, value] of Object.entries(res)) {
-        questions.innerHTML += `<div class="question">
+        questions.innerHTML += `<div class="question" onclick='view("${key}");'>
                                     <div class="qa">
                                         <img class="qat" src="/imgs/avatar.png"></img>
                                         <h4 class="qaname">${value.creator}</h3>
@@ -120,10 +119,19 @@ async function getposts() {
     }
 }
 
+function view(id) {
+    localStorage.setItem("viewid", id);
+    location.href = "/view.html";
+}
+
 function search() {
     localStorage.setItem("searchquery", searche.value);
     location.href = "/search.html";
 }
+
+searche.addEventListener("keydown", (ev) => {
+    if (ev.key === "Enter") search();
+});
 
 setuser();
 getposts();

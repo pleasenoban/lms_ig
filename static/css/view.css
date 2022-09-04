@@ -146,11 +146,6 @@ body {
     margin-left: 50px;
 }
 
-.question:hover {
-    cursor: pointer;
-    filter: brightness(90%);
-}
-
 .qa,
 .ca {
     display: flex;

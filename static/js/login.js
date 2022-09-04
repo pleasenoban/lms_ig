@@ -1,6 +1,6 @@
-let showc = document.getElementById("show");
-let passe = document.getElementById("password");
-let usere = document.getElementById("username");
+const showc = document.getElementById("show");
+const passe = document.getElementById("password");
+const usere = document.getElementById("username");
 
 showc.addEventListener("change", (ev) => {
     if (ev.target.checked) passe.type = "text";

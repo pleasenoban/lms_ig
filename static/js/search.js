@@ -1,6 +1,6 @@
-let userdatae = document.getElementById("userdata");
-let searche = document.getElementById("search");
-let answerse = document.getElementById("answers");
+const userdatae = document.getElementById("userdata");
+const searche = document.getElementById("search");
+const answerse = document.getElementById("answers");
 
 function sanitizeHTML(text) {
     let element = document.createElement('div');

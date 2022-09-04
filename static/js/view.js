@@ -1,11 +1,11 @@
-let userdatae = document.getElementById("userdata");
-let searche = document.getElementById("search");
-let qcont = document.getElementById("question");
-let commentse = document.getElementById("comments");
-let createbtn = document.getElementById("createbtn");
-let cancelbtn = document.getElementById("cancel");
-let createdia = document.getElementById("createdia");
-let editor = document.getElementById("editor");
+const userdatae = document.getElementById("userdata");
+const searche = document.getElementById("search");
+const qcont = document.getElementById("question");
+const commentse = document.getElementById("comments");
+const createbtn = document.getElementById("createbtn");
+const cancelbtn = document.getElementById("cancel");
+const createdia = document.getElementById("createdia");
+const editor = document.getElementById("editor");
 
 function sanitizeHTML(text) {
     let element = document.createElement('div');

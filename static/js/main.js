@@ -45,7 +45,7 @@ async function logout() {
     if (!res.ok) {
         return alert("cannot logout");
     }
-    location.href = "/login.html";
+    location.reload();
 }
 
 function create() {

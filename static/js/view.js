@@ -5,7 +5,7 @@ const commentse = document.getElementById("comments");
 const createbtn = document.getElementById("createbtn");
 const cancelbtn = document.getElementById("cancel");
 const createdia = document.getElementById("createdia");
-const editor = document.getElementById("editor");
+let editor = document.getElementById("editor");
 
 function sanitizeHTML(text) {
     let element = document.createElement('div');

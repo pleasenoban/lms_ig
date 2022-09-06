@@ -20,3 +20,5 @@ async function submit() {
     }
     location.href = "/main.html";
 }
+
+if (document.cookie.includes("id")) location.href = "/main.html";

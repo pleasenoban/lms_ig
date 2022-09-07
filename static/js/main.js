@@ -19,7 +19,7 @@ async function setuser() {
         userdatae.innerHTML = `<button id="login" onclick="location.href = '/login.html'">login</button>
                                <button id="signup" onclick="location.href = '/signup.html'">signup</button>`;
     } else {
-        userdatae.innerHTML = `<p id="welcomemsg">welcome,&nbsp;</p>
+        userdatae.innerHTML = `<img src="/imgs/avatar.png" id="welcomeimg">
                                <p id="username">${sanitizeHTML(username)}</p>
                                <button id="logout" onclick="logout();">logout</button>`;
     }

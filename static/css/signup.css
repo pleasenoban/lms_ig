@@ -83,3 +83,9 @@ body {
 #loginpage {
     color: whitesmoke;
 }
+
+#signup-logo {
+    width: 75px;
+    height: 75px;
+    filter: invert(100%);
+}

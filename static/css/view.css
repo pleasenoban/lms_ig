@@ -106,6 +106,12 @@ body {
     opacity: 87%;
 }
 
+#cancel {
+    background-color: white;
+    color: black;
+    filter: brightness(80%);
+}
+
 #create {
     margin-right: 0;
     margin-top: 15px;
@@ -184,4 +190,11 @@ body {
 
 #editor {
     width: 500px;
+}
+
+#welcomeimg {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 2px;
 }

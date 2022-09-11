@@ -79,6 +79,7 @@ app.post("/signup", async (req, res) => {
     }
     // too lazy to add hashing so deal with it lmao
     users.set(username, password);
+    res.status(200).send("successful");
 })
 
 app.get("/userinfo", async (req, res) => {
